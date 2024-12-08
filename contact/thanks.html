@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <%- include('components/meta', {
+    title: '送信完了',
+    description: 'グランドエステートのお問い合わせ完了ページでございます。',
+    path: '/contact/thanks.html',
+    ogType: 'article'
+  }) %>
+</head>
+<body>
+  <%- include('components/header') %>
+  
+  <main>
+    <div class="page-header">
+      <div class="page-header__inner">
+        <h1 class="page-header__title">送信完了</h1>
+      </div>
+    </div>
+
+    <div class="content">
+      <section class="content-section">
+        <div class="content-section__inner">
+          <div class="thanks-content">
+            <div class="thanks-content__icon">
+              <svg width="60" height="60" viewBox="0 0 60 60">
+                <circle cx="30" cy="30" r="28" fill="none" stroke="#3498db" stroke-width="4"/>
+                <path d="M18 32l8 8 16-16" stroke="#3498db" stroke-width="4" fill="none"/>
+              </svg>
+            </div>
+            <h2 class="thanks-content__title">送信完了</h2>
+            <p class="thanks-content__text">
+              ※これはポートフォリオサイトのデモページです。<br>
+              実際のお問い合わせは送信されません。
+            </p>
+            <div class="thanks-content__button">
+              <a href="/" class="button">トップページへ戻る</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <%- include('components/footer') %>
+  <script type="module" src="/src/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.footer {
+  background-color: #f5f5f5;
+  padding: 4rem 0 2rem;
+
+  &__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    @include respond-to(md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__company {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__logo {
+    img {
+      width: 120px;
+      height: auto;
+    }
+  }
+
+  &__address {
+    font-style: normal;
+    line-height: 1.6;
+    font-size: 0.9rem;
+  }
+
+  &__nav {
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      list-style: none;
+
+      @include respond-to(sm) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $text-color;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+    font-size: 0.8rem;
+    color: #666;
+  }
+}

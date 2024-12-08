@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <%- include('components/meta', {
+    title: '企業情報',
+    description: 'グランドエステートの企業情報をご紹介します。経営理念や会社概要、沿革など、企業としての取り組みをご覧いただけます。',
+    path: '/company/',
+    ogType: 'article'
+  }) %>
+</head>
+<body>
+  <%- include('components/header') %>
+  
+  <main>
+    <div class="page-header">
+      <div class="page-header__inner">
+        <h1 class="page-header__title">企業情報</h1>
+      </div>
+    </div>
+
+    <div class="content">
+      <section class="content-section">
+        <div class="content-section__inner">
+          <h2 class="content-section__heading">会社概要</h2>
+          <dl class="info-list">
+            <dt>社名</dt>
+            <dd>株式会社グランドエステート（GRAND ESTATE Inc.）</dd>
+            
+            <dt>設立</dt>
+            <dd>2010年4月1日</dd>
+            
+            <dt>資本金</dt>
+            <dd>1億円</dd>
+            
+            <dt>代表取締役</dt>
+            <dd>山田 太郎</dd>
+            
+            <dt>従業員数</dt>
+            <dd>120名（2024年1月現在）</dd>
+            
+            <dt>事業内容</dt>
+            <dd>
+              <ul>
+                <li>不動産開発事業</li>
+                <li>不動産売買・仲介事業</li>
+                <li>不動産管理事業</li>
+                <li>不動産コンサルティング</li>
+              </ul>
+            </dd>
+            
+            <dt>所在地</dt>
+            <dd>〒104-0061<br>東京都中央区銀座1-1-1 グランドエステートビル6F</dd>
+            
+            <dt>許認可</dt>
+            <dd>
+              <ul>
+                <li>宅地建物取引業者免許 東京都知事(3)第00000号</li>
+                <li>一級建築士事務所 東京都知事登録 第00000号</li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <%- include('components/footer') %>
+  <script type="module" src="/src/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,13 +1,31 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <%- include('components/meta', {
+      title: 'トップページ',
+      description: 'グランドエステートは、高品質な不動産開発・売買・仲介・管理サービスを提供する総合不動産企業です。',
+      path: '/',
+      ogType: 'website'
+    }) %>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <%- include('components/header') %>
+
+
+    <main>
+      <div class="mv">
+        <div class="mv__inner">
+          <div class="mv__content">
+            <h2 class="mv__title">都市の未来を創造する、<br>不動産ソリューション</h2>
+            <p class="mv__text">最適な不動産戦略で、ビジネスの可能性を広げます</p>
+            <a href="/contact/" class="mv__button">お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('components/footer') %>
+    <!-- <div id="app"></div> -->
+    <script type="module" src="/src/assets/js/main.js"></script>
   </body>
 </html>

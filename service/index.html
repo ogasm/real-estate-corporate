@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <%- include('components/meta', {
+    title: '事業案内',
+    description: '不動産開発、売買・仲介、不動産管理、コンサルティングなど、グランドエステートが提供する多様な不動産サービスをご紹介します。',
+    path: '/service/',
+    ogType: 'article'
+  }) %>
+</head>
+<body>
+  <%- include('components/header') %>
+  
+  <main>
+    <div class="page-header">
+      <div class="page-header__inner">
+        <h1 class="page-header__title">事業案内</h1>
+      </div>
+    </div>
+
+    <div class="content">
+      <section class="content-section">
+        <div class="content-section__inner">
+          <h2 class="content-section__heading">不動産開発事業</h2>
+          <div class="service-content">
+            <div class="service-content__text">
+              <p>オフィスビル、商業施設、住宅など、多様な不動産開発を手がけています。環境に配慮した持続可能な開発と、地域社会との調和を重視したプロジェクトを展開しています。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="content-section__inner">
+          <h2 class="content-section__heading">不動産売買・仲介事業</h2>
+          <div class="service-content">
+            <div class="service-content__text">
+              <p>豊富な経験と専門知識を活かし、お客様のニーズに合わせた最適な不動産取引をサポートします。市場分析から価格査定、契約まで、きめ細やかなサービスを提供いたします。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="content-section__inner">
+          <h2 class="content-section__heading">不動産管理事業</h2>
+          <div class="service-content">
+            <div class="service-content__text">
+              <p>建物の維持管理から収益性の向上まで、不動産の価値を最大限に引き出す総合的な管理サービスを提供しています。24時間体制での緊急対応も可能です。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="content-section__inner">
+          <h2 class="content-section__heading">不動産コンサルティング</h2>
+          <div class="service-content">
+            <div class="service-content__text">
+              <p>不動産投資戦略の立案から、資産運用のアドバイス、事業計画の策定まで、専門的な見地からコンサルティングサービスを提供しています。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <%- include('components/footer') %>
+  <script type="module" src="/src/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+/* レスポンシブデザイン用のミックスイン */
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: 576px) { @content; }
+  } @else if $breakpoint == md {
+    @media (max-width: 768px) { @content; }
+  } @else if $breakpoint == lg {
+    @media (max-width: 992px) { @content; }
+  } @else if $breakpoint == xl {
+    @media (max-width: 1200px) { @content; }
+  }
+}
+
+/* 中央揃え用のミックスイン */
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

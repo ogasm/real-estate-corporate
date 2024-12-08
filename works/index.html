@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <%- include('components/meta', {
+    title: '実績紹介',
+    description: 'グランドエステートが手がけた不動産開発プロジェクトや、各種不動産サービスの実績をご紹介します。高品質な不動産サービスの実例をご覧いただけます。',
+    path: '/works/',
+    ogType: 'article'
+  }) %>
+</head>
+<body>
+  <%- include('components/header') %>
+  
+  <main>
+    <div class="page-header">
+      <div class="page-header__inner">
+        <h1 class="page-header__title">実績紹介</h1>
+      </div>
+    </div>
+
+    <div class="content">
+      <section class="content-section">
+        <div class="content-section__inner">
+          <h2 class="content-section__heading">主な実績</h2>
+          <div class="works-grid">
+            <div class="works-item">
+              <img src="/src/assets/images/work-1.svg" alt="グランドタワー銀座" class="works-item__image">
+              <h3 class="works-item__title">グランドタワー銀座</h3>
+              <p class="works-item__description">最新のオフィス環境と洗練された商業施設を備えた複合ビル</p>
+            </div>
+            <div class="works-item">
+              <img src="/src/assets/images/work-2.svg" alt="パークビューレジデンス" class="works-item__image">
+              <h3 class="works-item__title">パークビューレジデンス</h3>
+              <p class="works-item__description">緑豊かな環境に調和した高級マンション</p>
+            </div>
+            <div class="works-item">
+              <img src="/src/assets/images/work-3.svg" alt="シーサイドモール" class="works-item__image">
+              <h3 class="works-item__title">シーサイドモール</h3>
+              <p class="works-item__description">海辺の立地を活かした大型商業施設</p>
+            </div>
+            <!-- 必要に応じて追加の実績項目を追加 -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <%- include('components/footer') %>
+  <script type="module" src="/src/assets/js/main.js"></script>
+</body>
+</html>

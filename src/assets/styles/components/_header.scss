@@ -1,0 +1,101 @@
+// assets/styles/components/_header.scss
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.95);
+
+  &__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    img {
+      width: 120px;
+      height: auto;
+    }
+  }
+
+  &__nav {
+    @include respond-to(md) {
+      display: none;
+      
+      &.is-open {
+        display: block;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 1rem;
+
+        .header__nav-list {
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+
+  &__menu-button {
+    &.is-active {
+      span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: $text-color;
+    font-weight: 500;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &__menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+
+    @include respond-to(md) {
+      display: block;
+    }
+
+    span {
+      display: block;
+      width: 25px;
+      height: 2px;
+      background: $text-color;
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+<svg width="120" height="40" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="40" fill="#3498db"/>
+  <text x="60" y="18" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">GRAND</text>
+  <text x="60" y="30" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">ESTATE</text>
+</svg>
